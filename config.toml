@@ -1,25 +1,114 @@
-# The URL the site will be built for
-base_url = "/"
+<!DOCTYPE html>
+<html>
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>
+        {% block title %}{{ config.title }}{% endblock title %}
+    </title>
 
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-# highlight_code = true
+    <!-- ✅ Corrected meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BitDevsUyo is a community in Uyo, Nigeria, for those interested in Bitcoin development, research, related protocols and software through technical discussions and collaboration.">
 
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+</head>
 
-generate_feed = true
-feed_filename = "rss.xml"
+<body>
 
-title = "BitDevsUyo"
-description = "BitDevsUyo is a community in Uyo, Nigeria, for those interested in Bitcoin development, research, related protocols and software through technical discussions and collaboration."
+<div class="Site">
 
-[extra]
-# Put all your custom variables here
+    <header class="Header">
+        <div class="Header-inner">
+            <div class="Header-logo">
+                <a href="/">{{ config.title }}</a>
+            </div>
+            <nav class="Header-nav">
+                <a href="/about">About</a>
+                <a href="{{ config.extra.luma }}" target="_blank" rel="noopener nofollow">Luma</a>
+                <a href="{{ config.extra.twitter }}" target="_blank" rel="noopener nofollow">Twitter</a>
+            </nav>
+        </div>
+        <div class="Header-border">
+            ==============================================================================================================================================================
+        </div>
+    </header>
 
-github = "https://github.com/BitDevsUyo/bitdevsuyo.org"
-luma    = "https://lu.ma/user/usr-LSrokdHgVhr3Rj7"
-twitter = "https://twitter.com/BitDevsUyo"
+    {% block content %}
+    <div class="Home">
+        <p class="Home-about">
+            {{ config.description }}
+        </p>
+
+        <div class="Home-posts">
+            <h2 class="Home-posts-title">Upcoming and Recent Events</h2>
+            {% for page in section.pages %}
+            <div class="Home-posts-post">
+                <span class="Home-posts-post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                <span class="Home-posts-post-arrow">&raquo;</span>
+                <a class="Home-posts-post-title" href="{{ page.permalink }}">{{ page.title }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock content %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://www.schema.org",
+  "@type": "CommunityClub",
+  "name": "BitDevsUyo",
+  "url": "",
+  "description": "BitDevsUyo is a community in Uyo, Nigeria, for those interested in Bitcoin development, research, related protocols and software through technical discussions and collaboration.",
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Ufia Irene"
+    },
+    {
+      "@type": "Person",
+      "name": "Emmanuel Maxwell"
+    },
+    {
+      "@type": "Person",
+      "name": "God'swill Ufia"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Uyo",
+    "addressRegion": "Uyo",
+    "addressCountry": "Uyo"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Organizer",
+    "email": "bitdevsuyo@gmail.com"
+  }
+}
+</script>
+
+    <footer class="Footer">
+        <div class="Footer-border">
+            ==============================================================================================================================================================
+        </div>
+        <div class="Footer-inner">
+            <div class="Footer-source">
+                <a href="{{ config.extra.github }}" target="_blank"
+                   rel="noopener nofollow">Source available on Github</a>
+            </div>
+            <div class="Footer-rss">
+                <a href="/sponsors">Sponsors</a>
+                <a href="/rss.xml">RSS Feed</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
