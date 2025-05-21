@@ -6,7 +6,7 @@ template = "post.html"
 
 ## Welcome to BitDevsUyo's First Socratic Seminar!
 
-**Thank you** to our sponsors [Btrust](https://www.btrust.tech/) and [Calabar Bitcoin Club](https://hrf.org/) for providing pizza as we celebrate Bitcoin Pizza Day.
+**Thank you** to our sponsor [Btrust](https://www.btrust.tech/) and to [Calabar Bitcoin Club](https://hrf.org/) for providing pizza as we join the world to celebrate Bitcoin Pizza Day.
 
 ### Details
 - **Time**: 13:00- 15:30
