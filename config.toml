@@ -11,8 +11,8 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-generate_feed = true
-feed_filename = "rss.xml"
+#generate_feed = true
+#feed_filename = "rss.xml"
 
 title = "BitDevsUyo"
 description = "BitDevsUyo is a community in Uyo, Nigeria, for those interested in Bitcoin development, research, related protocols and software through technical discussions and collaboration."
