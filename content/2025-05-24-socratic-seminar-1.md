@@ -17,7 +17,7 @@ template = "post.html"
 ### Introduction to the Community
 _______________________________________________________________________________
 * [Understanding the Mission of Bitdevs and Bitdevs Uyo](https://bitdevsuyo.org/about)
-* [Developers Opportunity with Bitcoin]
+* Developers Opportunity with Bitcoin
 
 ### What is Bitcoin
 _______________________________________________________________________________
