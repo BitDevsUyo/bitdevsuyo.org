@@ -14,6 +14,11 @@ template = "post.html"
 
 ### Agenda
 
+### Introduction to the Community
+_______________________________________________________________________________
+* [Understanding the Mission of Bitdevs and Bitdevs Uyo](https://bitdevsuyo.org/about)
+* [Developers Opportunity with Bitcoin]
+
 ### What is Bitcoin
 _______________________________________________________________________________
 
@@ -41,5 +46,5 @@ _______________________________________________________________________________
 - Follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule)
 - No photos, videos, or recordings
 - Keep the space clean
-- [Learn about BitDevs](https://www.bitdevsnbo.org/about)
+- [Learn about BitDevs](https://www.bitdevsuyo.org/about)
 - Have topics for our next seminar? [Find topic suggestions here](/about/find-topics)
