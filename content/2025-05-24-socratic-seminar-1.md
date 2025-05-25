@@ -22,8 +22,8 @@ _______________________________________________________________________________
 ### What is Bitcoin
 _______________________________________________________________________________
 
-   * [Explore the origin, purpose and fundamental ideas behind Bitcoin](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch02_overview.adoc)
-   * [Understand its real world use cases and why it was created](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch02_overview.adoc)
+   * [Explore the origin, purpose and fundamental ideas behind Bitcoin](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch01_intro.adoc)
+   * [Understand its real world use cases and why it was created](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch01_intro.adoc)
 
 ### Understanding Wallets and Transactions
 _______________________________________________________________________________
