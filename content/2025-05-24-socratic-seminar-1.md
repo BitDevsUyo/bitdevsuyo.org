@@ -14,12 +14,10 @@ template = "post.html"
 
 ### Agenda
 
-### Introduction
+### Introduction to the Community
 _______________________________________________________________________________
-
-   * [What is BitDevs](https://bitdevs.org)
-   * [BitDevs Uyo](/about)
-   * [The Socratic set up of BitDev](https://en.wikipedia.org/wiki/Socratic_method#Socratic_seminar)
+* [Understanding the Mission of Bitdevs and Bitdevs Uyo](https://bitdevsuyo.org/about)
+* Developers Opportunity with Bitcoin
 
 ### What is Bitcoin
 _______________________________________________________________________________
