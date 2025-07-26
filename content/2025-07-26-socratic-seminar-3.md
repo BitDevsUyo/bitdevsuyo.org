@@ -24,7 +24,7 @@ _______________________________________________________________________________
 
 ### Bitcoin Transactions
 _______________________________________________________________________________
-* [Fundamentals of Bitcoin Transactions](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
+* [Fundamentals of Bitcoin Transactions](https://learnmeabitcoin.com/technical/transaction)
 * [Inputs, Outputs and Scripts](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
 * [Transaction Propagation, Policies, Fees and Mempool](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
 
