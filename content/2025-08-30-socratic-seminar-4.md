@@ -19,6 +19,7 @@ template = "post.html"
 ### Exploring What's Possible with Bitnob SDK
 _______________________________________________________________________________
 * [Bitnob API Implementation](https://bitnob.dev)
+* [Bitnob Workshop Resources] (https://github.com/bitnob/api-workshops)
 
 
 ### Bitcoin Authoriztion and Authentication
