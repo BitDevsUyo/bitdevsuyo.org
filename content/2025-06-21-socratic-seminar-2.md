@@ -50,5 +50,5 @@ _______________________________________________________________________________
 - Follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule)
 - No photos, videos, or recordings
 - Keep the space clean
-- [Learn about BitDevs](https://www.bitdevsuyo.org/about)
+- [Learn about BitDevs](https://bitdevsuyo.org/about/)
 - Have topics for our next seminar? [Find topic suggestions here](/about/find-topics)
