@@ -17,19 +17,19 @@ Thank you to our sponsor [Btrust](https://www.btrust.tech/).
 
 ## Agenda  
 
-## <strong>1. Introduction to the Lightning Network</strong>  
+### <strong>1. Introduction to the Lightning Network</strong>  
 - [What is the Lightning Network?](https://lightning.network/lightning-network-paper.pdf) – Official Lightning Network documentation  
 - [Lightning Network Explained](https://river.com/learn/terms/l/lightning-network/) – Beginner's guide to understanding Lightning  
 - [How Payment Channels Work](https://docs.lightning.engineering/the-lightning-network/payment-channels/lifecycle-of-a-payment-channel) – Understanding bidirectional payment channels  
 
-### <strong>Demo: Polar Wallet Setup</strong>
+#### <strong>Demo: Polar Wallet Setup</strong>
 - [Polar](https://lightningpolar.com/) – One-click Lightning networks  
 - [Local Cluster Setup Guide](https://docs.lightning.engineering/lapps/guides/polar-lapps/local-cluster-setup-with-polar) – Step-by-step tutorial for opening channels  
 - [Polar on GitHub](https://github.com/jamaljsr/polar) – Tool for local Lightning Network development  
 
 
 
-## <strong>2. Community Wallet Initiative </strong> 
+### <strong>2. Community Wallet Initiative </strong> 
 - **Community Wallet Announcement:** Introduction of BitDevs Uyo’s community wallet project ([Design Preview](https://www.figma.com/design/mnHtD6klbNdqJDfMpkZXoo/Bitdevwallet?node-id=75-6878&t=CqhuhUiMSmh4GmUO-1))  
 - **Community Vote Results:** The community voted and selected **Arise Wallet** as the official name  
 
