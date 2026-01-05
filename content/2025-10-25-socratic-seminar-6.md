@@ -18,7 +18,7 @@ Thank you to our sponsor [Btrust](https://www.btrust.tech/).
 ## Agenda  
 
 ### <strong>1. Technical Workshop on the community's open source project </strong>  
-- [BitDevs Uyo Community Wallet](https://github.com/BitDevsUyo/bitdevs-uyo-community-wallet) 
+- [BitDevs Uyo Community Wallet](https://github.com/BitDevsUyo/AriseWallet) 
 - [Technical implementation of wallets using BDK](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch05_wallets.adoc)  
 
 ### <strong>2. Disccusion on BIP44 and BIP84</strong>  
