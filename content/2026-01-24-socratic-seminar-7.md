@@ -19,7 +19,8 @@ template = "post.html"
 ### <strong>1.Revision </strong>  
 - Quick revision of what we've learned in 2025 so far
 
-### <strong>2.Introduction to Bitcoin Transactions</strong>  
+### <strong>2.Bitcoin Transactions</strong>  
+- [Bitcoin Transaction Structure, Time Locks and all you need to know ](https://learnmeabitcoin.com/technical/transaction/)
 - [Understanding how Bitcoin Transactions works ](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
 
 ### <strong>3.Quick Progress Review on the community's open source project </strong>  
@@ -28,10 +29,11 @@ template = "post.html"
 
 ---
 
+### Events
+- [Bitcoin Conferences](https://b.tc/conference/)
 
 ## 🏛 House Rules  
-- Follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule)  
-- No photos, videos, or recordings  
+- Follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule)   
 - Keep the space clean  
 - [Learn about BitDevs](https://bitdevsuyo.org/about/)  
 - Have ideas for our next seminar? [Suggest topics here](/about/find-topics)  
