@@ -14,27 +14,52 @@ template = "post.html"
 
 
 ### Agenda
-### <strong>1. Genesis: The Larp Begins</strong>
-- [Unpacking Bitcoin core](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch03_bitcoin_core.adoc)
-- [The Genesis Block and Transaction](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch09_block_chain.adoc)
-- [Introduction to the UTXO set](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Verifying the Genesis Block header calculating the block hash](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch09_block_chain.adoc)
+### <strong>1.0. Introduction</strong>
+- The purpose of this Bitcoin Live-Action-Role-Play (LARP) is to understand Bitcoin and learn what is under the hood; 
+what hapens when you do a bitcoin transaction and mine a block. It is a hands-on way to learn about Bitcoin protocol.
+A bunch of what we will practice is found in the Base 58 Bitcoin LARP Instruction manual. This manual contains all the information
+needed to do the LARP but additional guidance is available in [video form](https://m.youtube.com/playlist?list=PLHhfnB1UefkrVMh7RJ0ZTKSKSuHRx-e-6)
 
-### <strong>2. Transactions:Validating + Writing</strong>
-- [Network Transactions](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch08_network.adoc)
-- [TXID](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Inputs](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Writing Transactions](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Change Outputs](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Transaction Fees](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
+### <strong>1.1 Setup</strong>
+- Room Configuration
+- Facilitators
+- Rewards for Nodes
+- Genesis Block & Initial Transaction
+- Block Templates
 
-## <strong>3.Adding Transactions to the Mempool and Blocks </strong>
-- [Network Transactions](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch08_network.adoc)
-- [TXID](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Inputs](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Writing Transactions](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Change Outputs](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
-- [Transaction Fees](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc)
+## <strong>2.Genesis: The LARP Begins </strong>
+- Unpacking Bitcoin-core
+- The Genesis Block and Transaction
+- Introduction to the UTXO Set
+- Identifying Our Outputs
+- Verifying The Genesis Block Header
+- Calculating the Block Hash
+- The 'tx commitment'
+
+## <strong>3.Transactions: Validating + Writing </strong>
+- Network Transactions
+- TXIDs
+- Inputs
+- Outputs
+- Valid Transactions
+- The Mempool
+- Wallet Balance Check
+- Writing Transactions
+- Change Outputs
+- Transaction Fees
+- Adding Transaction to the Mempool
+
+## <strong>4. Networking - peer to peer </strong>
+- Sending Network Messages
+- Receiving Network Messages
+- Letting The Network Run
+- Common Mistakes and Issues
+- Checking Global Mempool State
+
+## <strong>5. Block Building </strong>
+- Building Your First Block Template
+- Writing A Coinbase Transaction
+- Ready to Mine for the Nonce
 
 ---
 ## 🏛 House Rules  
