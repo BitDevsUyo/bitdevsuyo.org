@@ -22,4 +22,113 @@
         <div class="Post-content">{{ page.content | safe }}</div>
     </div>
 </section>
+
+{% if page.extra.celebrate %}
+<canvas id="balloons" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999;"></canvas>
+<script>
+  const canvas = document.getElementById('balloons');
+  const ctx = canvas.getContext('2d');
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+  const COLORS = ['#f94144','#f3722c','#f8961e','#f9c74f','#90be6d','#43aa8b','#577590','#c77dff','#ff6b9d'];
+  const DURATION = 4000; // ms — balloons spawn for this long
+  const startTime = Date.now();
+  let spawning = true;
+
+  function randomBetween(a, b) { return a + Math.random() * (b - a); }
+
+  function createBalloon() {
+    return {
+      x: randomBetween(60, canvas.width - 60),
+      y: -120,
+      radius: randomBetween(28, 48),
+      color: COLORS[Math.floor(Math.random() * COLORS.length)],
+      speedY: randomBetween(1.2, 2.8),
+      speedX: randomBetween(-0.5, 0.5),
+      sway: randomBetween(0.01, 0.03),
+      swayOffset: randomBetween(0, Math.PI * 2),
+      opacity: randomBetween(0.75, 1),
+      tick: 0,
+    };
+  }
+
+  function drawBalloon(b) {
+    ctx.save();
+    ctx.globalAlpha = b.opacity;
+
+    ctx.beginPath();
+    ctx.ellipse(b.x, b.y, b.radius * 0.78, b.radius, 0, 0, Math.PI * 2);
+    ctx.fillStyle = b.color;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.ellipse(b.x - b.radius * 0.25, b.y - b.radius * 0.3, b.radius * 0.18, b.radius * 0.28, -0.5, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,0.35)';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(b.x, b.y + b.radius, 4, 0, Math.PI * 2);
+    ctx.fillStyle = b.color;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(b.x, b.y + b.radius + 4);
+    ctx.bezierCurveTo(
+      b.x + 8, b.y + b.radius + 30,
+      b.x - 8, b.y + b.radius + 60,
+      b.x + 4, b.y + b.radius + 90
+    );
+    ctx.strokeStyle = 'rgba(150,150,150,0.6)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    ctx.restore();
+  }
+
+  let balloons = Array.from({ length: 12 }, createBalloon).map(b => {
+    b.y = randomBetween(-200, canvas.height * 0.5);
+    return b;
+  });
+
+  let frame = 0;
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    frame++;
+
+    if (spawning) {
+      if (Date.now() - startTime > DURATION) {
+        spawning = false;
+      } else if (frame % 60 === 0 && balloons.length < 30) {
+        balloons.push(createBalloon());
+      }
+    }
+
+    balloons = balloons.filter(b => b.y < canvas.height + 150);
+
+    if (balloons.length === 0 && !spawning) {
+      canvas.remove();
+      return; // stop the loop entirely
+    }
+
+    for (const b of balloons) {
+      b.tick++;
+      b.y += b.speedY;
+      b.x += b.speedX + Math.sin(b.tick * b.sway + b.swayOffset) * 0.4;
+      drawBalloon(b);
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+{% endif %}
+
 {% endblock content %}
