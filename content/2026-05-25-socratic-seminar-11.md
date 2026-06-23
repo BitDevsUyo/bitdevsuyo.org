@@ -24,7 +24,7 @@ This session was both a celebration and a deep technical dive. We marked our **1
 ### Agenda
 
 ### <strong>1. Chapter 7: Merkle Root, MAST & Taproot</strong>
-- [Mastering Bitcoin: Chapter 7](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch07_authorization_authentication.adoc)
+- [Mastering Bitcoin: Chapter 7](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch07_authorization-authentication.adoc)
   - **Merkle Root** — The data structure and its role in Bitcoin
   - **MAST** (Merkelized Abstract Syntax Trees) — Authorization and authentication for complex spend conditions
   - **P2C** (Pay to Contract) — The cryptographic primitive underlying Taproot
