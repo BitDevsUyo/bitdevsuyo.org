@@ -1,10 +1,10 @@
 +++
-title = "Socratic Seminar #11"
+title = "Socratic Seminar #12"
 template = "post.html"
 [extra]
 +++
 
-## Welcome to BitDevsUyo's Tenth Socratic Seminar!
+## Welcome to BitDevsUyo's Twelfth Socratic Seminar!
 
 **Thank you** to our sponsor [Btrust](https://www.btrust.tech/) 
 
